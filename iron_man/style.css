@@ -1,0 +1,1215 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0px;
+	animation: wrapper 2s 8s ease forwards;
+}
+.stark,
+.stark .head,
+.stark .body,
+.stark .hand,
+.stark .body .hand:nth-child(1):after,
+.stark .body .hand:nth-child(2):after,
+.stark .lower-body,
+.stark .lower-body .leg,
+.stark .lower-body .leg .leg2,
+.stark .lower-body .leg:nth-child(1):after,
+.stark .lower-body .leg:nth-child(2):after,
+.stark .lower-body .leg .leg2 .foot,
+.iron-mask,
+.iron-mask .rect,
+.iron-mask .rect .rect-eyes-holder,
+.iron-mask .rect .rect-mouth,
+.iron-mask .rect .rect-eyes-holder-eyes,
+.jet,
+.jet .flame,
+.iron-body,
+.iron-body .iron-body-chest,
+.iron-body .iron-body-chest .reactor,
+.iron-body .iron-body-chest .iron-body-chest-ab,
+.iron-body .iron-body-lower,
+.iron-hand-left,
+.iron-hand-left .iron-arm,
+.iron-hand-left .iron-hand-hand,
+.iron-hand-left .iron-hand-hand .iron-hand-finger,
+.iron-hand-left .iron-hand-hand .iron-hand-finger:after,
+.iron-hand-right,
+.iron-hand-right .iron-arm,
+.iron-hand-right .iron-hand-hand,
+.iron-hand-right .iron-hand-hand .iron-hand-finger,
+.iron-hand-right .iron-hand-hand .iron-hand-finger:after,
+.iron-hand-right:after,
+.iron-hand-left:after,
+.iron-shoulders-right,
+.iron-shoulders-right:before,
+.platform-holder,
+.platform-holder .shadow,
+.platform-box,
+.platform-arc,
+.platform-box .box,
+.iron-shoulders-left,
+.iron-shoulders-left:before,
+.iron-leg-left,
+.iron-leg-left .iron-leg-left-foot,
+.iron-leg-left-foot:after,
+.iron-leg-right,
+.iron-leg-right .iron-leg-right-foot,
+.iron-leg-right-foot:after,
+.iron-brief,
+.iron-brief .wing,
+.iron-brief .wing-in,
+.iron-harm-left,
+.iron-harm-left .cap,
+.iron-harm-left .harm,
+.iron-harm-right,
+.iron-harm-right .cap,
+.iron-harm-right .harm,
+.iron-mask:after,
+.iron-body:after,
+.iron-shoulders-right:after,
+.iron-shoulders-left:after,
+.iron-leg-left:after,
+.iron-leg-right:after,
+.iron-brief:after,
+.iron-harm-left:after,
+.iron-harm-right:after,
+.platform-lvl1,
+.iron-leg-right .hamstring,
+.iron-leg-left .hamstring,
+.iron-body-back,
+.arc-left,
+.arc-right,
+.arc-top
+{
+	position: absolute;
+}
+.platform-holder,
+.platform-holder .shadow,
+.platform-box,
+.platform-arc,
+.platform-lvl1,
+.iron-mask .rect .rect-eyes-holder,
+.iron-mask .rect .rect-mouth
+{
+	left: 0;
+	right: 0;
+	margin: 0px auto;
+}
+.wrapper{
+	background-color: #fff;
+	width: 100%;
+	height: 400px;
+	position: relative;
+	animation: wrapper 2s 8s ease forwards;
+}
+.arc-left,
+.arc-right,
+.arc-top
+{
+	background-color: transparent;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	z-index: 0;
+	box-shadow: inset 0px 0px 0px 0px #52FEFE, 0px 0px 0px 0px #52FEFE;
+	animation: arcs 2s 9.8s ease infinite alternate;
+}
+
+.arc-left{
+	left: -160px;
+	width: 15px;
+	height: 270px;
+	bottom: 30px;
+}
+.arc-right{
+	right: -161px;
+	width: 15px;
+	height: 270px;
+	bottom: 30px;
+}
+.arc-top{
+	width: 15px;
+	height: 176px;
+	bottom: 220px;
+	transform: rotate(90deg);
+}
+@keyframes arcs{
+	0%{box-shadow:inset 0px 0px 10px 0px #52FEFE, 0px 0px 10px 0px #52FEFE;background-color: #fff}
+	100%{box-shadow:inset 0px 0px 10px 0px #52FEFE, 0px 0px 15px 3px #52FEFE;background-color: #fff}
+}
+.platform-holder{
+	width: 300px;
+	height: 50px;
+	background-color: #fff;
+	border-radius: 100%;
+	bottom: 40px;
+	border: 3px solid #565656;
+	z-index: 2;
+	box-shadow: inset 0px 0px 10px 0px #52FEFE,0px -10px 15px 3px #52FEFE;
+}
+.platform-holder .shadow{
+	width: 110px;
+	height: 20px;
+	background-color: rgba(51, 51, 51,.5);
+	border-radius: 100%;
+	bottom: 15px;
+	animation: shadow .5s 1s ease forwards;
+}
+.platform-box{
+	width: 300px;
+	height: 25px;
+	background-color: #6d6d6d;
+	bottom: 40px;
+	border-left: 3px solid #565656;
+	border-right: 3px solid #565656;
+	z-index: 1;
+}
+.platform-box .box{
+	width: 300px;
+	height: 50px;
+	background-color: #6d6d6d;
+	border-radius: 100%;
+	bottom: -25px;
+	left: -3px;
+	right: 0;
+	border-bottom: 3px solid #565656;
+	margin: 0px auto;
+}
+.platform-arc{
+	width: 250px;
+	height: 30px;
+	background-color: #6d6d6d;
+	border-radius: 100%;
+	bottom: 9px;
+	box-shadow: 0px 0px 10px 3px #52FEFE;
+}
+.platform-lvl1{
+	width: 500px;
+	height: 65px;
+	background-color: #b1b199;
+	border-radius: 100%;
+	bottom: 0px;
+	border: 2px solid #565656;
+	z-index: 0;
+}
+.stark{
+	height: 200px;
+	width: 80px;
+	bottom: 50px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	z-index: 10;
+}
+.stark .head{
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	border: 10px solid #333;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 0px;
+	animation: stark-head .5s 1s ease forwards;
+}
+.stark .body{
+	height: 50px;
+	width: 10px;
+	background-color: #333;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 50px;
+	animation: stark-body .5s 1s ease forwards;
+}
+.stark .hand{
+	height: 45px;
+	width: 10px;
+	background-color: #333;
+}
+.stark .body .hand:nth-child(1){
+	top: 0px;
+	left: 8px;
+	transform: rotate(-20deg);
+	animation: stark-arm-right .5s 1s ease forwards;
+}
+.stark .body .hand:nth-child(1):after{
+	content: "";
+	width: 18px;
+	height: 18px;
+	border-radius: 50% 5px 5px 5px;
+	background-color: #333;
+	bottom: -13px;
+	right: -5px;
+	animation: stark-hand .5s 1s ease forwards;
+}
+.stark .body .hand:nth-child(2){
+	top: 0px;
+	right: 8px;
+	transform: rotate(20deg);
+	animation: stark-arm-left .5s 1s ease forwards;
+}
+.stark .body .hand:nth-child(2):after{
+	content: "";
+	width: 18px;
+	height: 18px;
+	border-radius: 5px 50% 5px 5px;
+	background-color: #333;
+	bottom: -15px;
+	right: -5px;
+	animation: stark-hand .5s 1s ease forwards;
+}
+.stark .lower-body{
+	height: 50px;
+	width: 10px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 98px;
+}
+.stark .lower-body .leg{
+	height: 45px;
+	width: 10px;
+	background-color: #333;
+}
+.stark .lower-body .leg .leg2{
+	width: 10px;
+	height: 40px;
+	top: 45px;
+	left: 0px;
+	background-color: #333;
+}
+.stark .lower-body .leg:nth-child(1){
+	top: 0px;
+	left: 4px;
+	transform: rotate(-10deg);
+	animation: stark-leg-left .5s 1s ease forwards;
+}
+.stark .lower-body .leg:nth-child(1) .leg2{
+	transform: rotate(0deg);
+	transform-origin: 100% 0%;
+	animation: stark-leg-left-foot .5s 1s ease forwards;
+}
+.stark .lower-body .leg:nth-child(2){
+	top: 0px;
+	right: 4px;
+	transform: rotate(10deg);
+	animation: stark-leg-right .5s 1s ease forwards;
+}
+.stark .lower-body .leg:nth-child(2) .leg2{
+	transform: rotate(0deg);
+	transform-origin: 0% 0%;
+	animation: stark-leg-right-foot .5s 1s ease forwards;
+}
+.stark .lower-body .leg:nth-child(1) .leg2 .foot{
+	width: 20px;
+	height: 15px;
+	bottom: -5px;
+	border-radius: 5px;
+	background-color: #333;
+	transform: rotate(15deg);
+}
+.stark .lower-body .leg:nth-child(2) .leg2 .foot{
+	width: 20px;
+	height: 15px;
+	bottom: -10px;
+	border-radius: 5px;
+	left:-15px;
+	background-color: #333;
+	transform: rotate(-30deg);
+	transform-origin: 50% 0;
+}
+
+.iron-mask:after,
+.iron-body:after,
+.iron-shoulders-right:after,
+.iron-shoulders-left:after,
+.iron-leg-left:after,
+.iron-leg-right:after,
+.iron-brief:after,
+.iron-harm-left:after,
+.iron-harm-right:after
+{
+	content: "";
+	border-radius: 100%;
+	background-color: #fff;
+	box-shadow: 0px 0px 0px 0px #81bff3, inset 0px 0px 0px 0px #81bff3;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+	bottom: 0px;
+	transform: rotate(-95deg);
+}
+.iron-mask{
+	width: 50px;
+	height: 55px;
+	background-color: #741107;
+	border-radius: 75px 75px 75px 75px;
+	z-index: 10;
+	animation: stark-mask 3.5s 4.5s ease forwards;
+	left: -350px;
+	top: 190px;
+	right: 0;
+	transform: rotate(-30deg);
+	margin: 0 auto;
+	box-shadow: inset 0px 0px 3px 2px #5d0c04;
+}
+.iron-mask:after{
+	width: 0px;
+	height: 10px;
+	animation: newflame-mask 7s 4s ease forwards;
+}
+.iron-body{
+	height: 55px;
+	width: 25px;
+	border-radius: 25px;
+	background-color: #741107;
+	z-index: 5;
+	left: 130px;
+	right: 0;
+	top: 210px;
+	margin: 0 auto;
+	transform: rotate(54deg);
+	box-shadow: inset 0px 0px 4px 5px #5d0c04;
+	animation: iron-body 1s 2s ease-in-out forwards;
+}
+.iron-body:after{
+	width: 0px;
+	height: 8px;
+	bottom: -5px;
+	animation: newflame-body 2s 2s ease forwards;
+	z-index: -1;
+}
+
+.iron-body .iron-body-chest{
+	width: 40px;
+	height: 0px;
+	border-top: 25px solid #eec569;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-radius: 10px 10px 0px 0px;
+	left: -7.5px;
+	top: 0px;
+	z-index: 3;
+}
+.iron-body .iron-body-chest .reactor{
+	width: 13px;
+	height: 13px;
+	border-radius: 100%;
+	background-color: #fff;
+	border: 2px solid #c89f45;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: -20px;
+	animation: arc-reactor 1s 9s ease forwards;
+	box-shadow: 0px 0px 0px 0px transparent;
+}
+.iron-body .iron-body-chest .iron-body-chest-ab{
+	width: 20px;
+	height: 0px;
+	border-bottom: 7px solid #eec569;
+	border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+	border-radius: 0px 0px 10px 10px;
+	left: 0px;
+	top: -5px;
+	animation: iron-body-ab 1s 3s ease forwards ;
+	z-index: 0;
+}
+.iron-body .iron-body-lower{
+	width: 10px;
+	height: 0px;
+	border-top: 10px solid #eec569;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-radius: 10px 10px 0px 0px;
+	left: 2.5px;
+	bottom: 2px;
+	z-index: 2;
+	animation: iron-body-lower 1s 4s ease forwards ;
+}
+.iron-mask .rect{
+	width: 23px;
+	height: 15px;
+	background-color: #eec569;
+	z-index: 2;
+}
+.iron-mask .rect:nth-child(1){
+	transform: rotate(69deg);
+	top: -19px;
+	left: 1px;
+	border-radius: 0 0 0 10px;
+	box-shadow: inset 0px 0px 3px 2px #ad862e;
+	animation: stark-mask-rect-12 1s 7.5s ease forwards;
+}
+.iron-mask .rect:nth-child(2){
+	transform: rotate(-69deg);
+	top: -19px;
+	right: 1px;
+	border-radius: 0 0 10px 0;
+	box-shadow: inset 0px 0px 3px 2px #ad862e;
+	animation: stark-mask-rect-12 1s 7.5s ease forwards;
+}
+.iron-mask .rect:nth-child(3){
+	height: 40px;
+	width: 30px;
+	top: -13px;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+	border-radius: 10px 10px 20px 20px;
+	animation: stark-mask-rect-3 1s 7.5s ease forwards;
+}
+.iron-mask .rect:nth-child(4){
+	background-color: transparent;
+	width: 15px;
+	bottom: 1px;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+	z-index: 2;
+	border-bottom: 7px solid #741107;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	height: 0;
+}
+.iron-mask .rect:nth-child(5){
+	background-color: #333;
+	height: 40px;
+	width: 30px;
+	top: 13px;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+	border-radius: 10px 10px 20px 20px;
+	z-index: 1;
+}
+.iron-mask .rect .rect-eyes-holder{
+	width: 90%;
+	border-bottom: 3px solid #b18e3f;
+	border-radius: 100%;
+	top: 10px;
+	z-index: 2;
+}
+.iron-mask .rect .rect-eyes-holder-eyes{
+	width: 12px;
+	border-top: 4px solid #eaeaea;
+	border-left: 2px solid transparent;
+	border-right: 2px solid transparent;
+	bottom: -7px;
+	z-index: 1;
+	box-shadow: 0px 0px 0px 0px transparent;
+	animation: stark-mask-rect-eyes .5s 9s linear forwards;
+}
+.iron-mask .rect .rect-eyes-holder-eyes:nth-child(1){
+	left: 0px;
+}
+.iron-mask .rect .rect-eyes-holder-eyes:nth-child(2){
+	right: 0px;
+}
+.iron-mask .rect .rect-mouth{
+	width: 60%;
+	border-top: 2px solid #b18e3f;
+	border-radius: 20px;
+	bottom: 10px;
+	z-index: 2;
+}
+
+.iron-hand-left{
+	width: 0px;
+	height: 12px;
+	left: -60px;
+	top: 187px;
+	z-index: 2;
+	background-color: #eec569;
+	transform: rotate(80deg);
+	box-shadow: inset 0px -3px 4px -2px #ad862e;
+	animation: iron-hand-left 2s 1.5s ease forwards;
+}
+.iron-hand-left:after{
+	content: "";
+	width: 0px;
+	height: 5px;
+	border-radius: 100%;
+	background-color: #fff;
+	box-shadow: -2px 0px 0px 0px #81bff3, inset 0px 0px 0px 0px #81bff3;
+	right: -3px;
+	bottom: -14px;
+	transform: rotate(-95deg);
+	animation: newflame 2s 1.2s ease forwards;
+}
+.iron-hand-left .iron-arm{
+	width: 0px;
+	height: 9px;
+	left: -3px;
+	top: -1px;
+	z-index: 1;
+	background-color: #741107;
+    border-radius: 0px 0px 5px 0px;
+	animation: iron-hand-arm 1s 3s ease forwards;
+}
+.iron-hand-left .iron-hand-hand{
+	width: 30px;
+	height: 20px;
+	transform: rotate(90deg);
+	border-radius: 100%;
+	bottom: -5px;
+	left: -20px;
+	z-index: 2;
+	box-shadow: inset 0px 0px 2px 1px #ad862e;
+	background-color: #eec569;
+}
+.iron-hand-left .iron-hand-hand .iron-hand-finger{
+	width: 28px;
+	height: 15px;
+	border-radius: 100%;
+	left: 2px;
+	bottom: 0px;
+	box-shadow: inset 0px 0px 2px 1px #5d0c04;
+	background-color: #741107;
+}
+.iron-hand-left .iron-hand-hand .iron-hand-finger:after{
+	content: "";
+	width: 15px;
+	height: 10px;
+	border-radius: 100%;
+	left: 7px;
+	bottom: 1px;
+	background-color: #fff;
+	animation: arc-reactor 1s 9s ease forwards;
+}
+
+.iron-hand-right{
+	width: 0px;
+	height: 12px;
+	right: -85px;
+	top: 180px;
+	z-index: 2;
+	background-color: #eec569;
+	transform: rotate(-80deg);
+	box-shadow: inset 0px -3px 4px -2px #ad862e;
+	animation: iron-hand-right 2s 1.7s ease forwards;
+}
+.iron-hand-right:after{
+	content: "";
+	width: 0px;
+	height: 5px;
+	border-radius: 100%;
+	background-color: #fff;
+	box-shadow: -2px 0px 0px 0px #81bff3, inset 0px 0px 0px 0px #81bff3;
+	right: -9px;
+	bottom: -8px;
+	transform: rotate(-90deg);
+	animation: newflame 2s 1.2s ease forwards;
+}
+.iron-hand-right .iron-arm{
+	width: 0px;
+	height: 9px;
+	right: -3px;
+	top: -1px;
+	z-index: 1;
+	background-color: #741107;
+    border-radius: 0px 0px 0px 5px;
+	animation: iron-hand-arm 1s 3.5s ease forwards;
+}
+.iron-hand-right .iron-hand-hand{
+	width: 30px;
+	height: 20px;
+	transform: rotate(-90deg);
+	border-radius: 100%;
+	bottom: 0px;
+	right: -20px;
+	z-index: 2;
+	box-shadow: inset 0px 0px 2px 1px #ad862e;
+	background-color: #eec569;
+}
+.iron-hand-right .iron-hand-hand .iron-hand-finger{
+	width: 28px;
+	height: 15px;
+	border-radius: 100%;
+	right: 2px;
+	bottom: 0px;
+	box-shadow: inset 0px 0px 2px 1px #5d0c04;
+	background-color: #741107;
+}
+.iron-hand-right .iron-hand-hand .iron-hand-finger:after{
+	content: "";
+	width: 15px;
+	height: 10px;
+	border-radius: 100%;
+	right: 7px;
+	bottom: 1px;
+	background-color: #fff;
+	animation: arc-reactor 1s 9s ease forwards;
+}
+.iron-shoulders-right{
+	width: 15px;
+	height: 13px;
+	background-color: #5a5a5a;
+	z-index: 2;
+	left: -20px;
+	top: 180px;
+	border-radius: 100% 5px 5px 5px;
+    transform: rotate(10deg);
+    animation: iron-shoulders-right .5s 3s ease forwards;
+}
+.iron-shoulders-right:after{
+	width: 0;
+	height: 5px;
+	bottom: -8px;
+	z-index: 1;
+	animation: newflame-small 2s 2s ease forwards;
+}
+.iron-shoulders-left:after{
+	width: 0;
+	height: 5px;
+	bottom: -8px;
+	z-index: 1;
+	animation: newflame-small 1.5s 3.5s ease forwards;
+}
+.iron-leg-left:after{
+	width: 0;
+	height: 5px;
+	bottom: -8px;
+	z-index: 1;
+	animation: newflame-small 1.5s 2.5s ease forwards;
+}
+.iron-leg-right:after{
+	width: 0;
+	height: 5px;
+	bottom: -8px;
+	z-index: 1;
+	animation: newflame-small .8s 3s ease forwards;
+}
+.iron-brief:after{
+	width: 0;
+	height: 5px;
+	bottom: -8px;
+	left: -3px;
+	z-index: 1;
+	animation: newflame-small 1.5s 3.3s ease forwards;
+}
+.iron-harm-left:after{
+	width: 0;
+	height: 5px;
+	left: -45px;
+	top: 5px;
+	z-index: 1;
+	transform: rotate(0deg);
+	animation: newflame-mid 1.3s 4.5s ease forwards;
+}
+.iron-harm-right:after{
+	width: 0;
+	height: 5px;
+	right: -45px;
+	top: 5px;
+	z-index: 1;
+	transform: rotate(0deg);
+	animation: newflame-mid 1.3s 4.8s ease forwards;
+}
+.iron-shoulders-right:before{
+	content: "";
+	width: 15px;
+	height: 13px;
+	background-color: #741107;
+	top: 0px;
+	left: 0px;
+	border-radius: 100% 5px 5px 5px;
+    transform: rotate(10deg);
+    animation: iron-shoulders-right-before 2s 3s ease forwards;
+	box-shadow: inset 0px 0px 2px 1px #5d0c04;
+}
+.iron-shoulders-left{
+	width: 15px;
+	height: 13px;
+	background-color: #5a5a5a;
+	z-index: 2;
+	right: -50px;
+	top: 180px;
+	border-radius: 5px 100% 5px 5px;
+    transform: rotate(-3deg);
+    animation: iron-shoulders-left .5s 4s ease forwards;
+}
+.iron-shoulders-left:before{
+	content: "";
+	width: 15px;
+	height: 13px;
+	background-color: #741107;
+	top: 0px;
+	right: 0px;
+	border-radius: 5px 100% 5px 5px;
+    transform: rotate(-3deg);
+    animation: iron-shoulders-left-before 2s 4.5s ease forwards;
+	box-shadow: inset 0px 0px 2px 1px #5d0c04;
+}
+.iron-leg-left{
+	width: 13px;
+	height: 40px;
+	transform: rotate(90deg);
+	top: 150px;
+	left: -80px;
+    border-radius: 0px 5px 0px 15px;
+	background-color: #eec569;
+	box-shadow: inset -5px 0px 4px -2px #ad862e;
+	animation: iron-leg-left .5s 3.2s ease forwards;
+}
+.iron-leg-left-foot{
+	width: 0px;
+	height: 15px;
+	bottom: 3px;
+	left: 7px;
+	border-radius: 10px 0px 5px 3px;
+	border-bottom: 2px solid #ad862e;
+	transform: rotate(-30deg);
+	background-color: #eec569;
+	z-index: 2;
+	box-shadow: inset 0px -4px 5px -2px #ad862e;
+	animation: iron-leg-left-foot 1s 3.5s ease forwards;
+}
+.iron-leg-left-foot:after{
+	content: "";
+	width: 18px;
+	height: 0px;
+	bottom: 0px;
+	left: 3px;
+	border-radius: 0px 0px 10px 10px;
+	background-color: #741107;
+	z-index: 1;
+	animation: iron-leg-left-foot-after .5s 4.2s ease forwards;
+}
+.iron-leg-right{
+	width: 13px;
+	height: 40px;
+	transform: rotate(-93deg);
+	top: 175px;
+	right: -10px;
+    border-radius: 5px 0px 15px 0px;
+	background-color: #eec569;
+	box-shadow: inset 5px 0px 4px -2px #ad862e;
+	animation: iron-leg-right .5s 3.4s ease forwards;
+}
+.iron-leg-right-foot{
+	width: 0px;
+	height: 15px;
+	bottom: 3px;
+	right: 7px;
+	border-radius: 0px 10px 3px 5px;
+	border-bottom: 2px solid #ad862e;
+	box-shadow: inset 3px -4px 5px -2px #ad862e;
+	transform: rotate(60deg);
+	background-color: #eec569;
+	z-index: 2;
+	animation: iron-leg-right-foot 1s 3.7s ease forwards;
+}
+.iron-leg-right-foot:after{
+	content: "";
+	width: 18px;
+	height: 0px;
+	bottom: 0px;
+	right: 3px;
+	border-radius: 0px 0px 10px 10px;
+	background-color: #741107;
+	z-index: 1;
+	animation: iron-leg-right-foot-after .5s 4.4s ease forwards;
+}
+.iron-brief{
+	width: 17px;
+	top: 176px;
+	left: -150px;
+	transform: rotate(-30deg);
+	right: 0;
+	margin: 0 auto;
+	border-top: 15px solid #5a5a5a;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	animation: iron-brief 1.5s 3.5s ease forwards;
+	z-index: 2;
+}
+.iron-brief .wing{
+	width: 0px;
+	height: 10px;
+	background-color: #741107;
+	bottom: 5px;
+}
+.iron-brief .wing:nth-child(1){
+	left: 0px;
+	border-radius: 5px 2px 0px 2px;
+	transform: rotate(-10deg);
+	animation: wing-1 1.5s 5s ease forwards;
+}
+.iron-brief .wing:nth-child(2){
+	right: -13px;
+	border-radius: 0px 5px 2px 2px;
+	transform: rotate(10deg);
+	animation: wing-2 1.5s 5s ease forwards;
+}
+.iron-brief .wing:nth-child(1) .wing-in{
+	width: 0px;
+	height: 6px;
+	background-color: #eec569;
+	bottom: 5px;
+	left: 14px;
+	border-radius: 5px 2px 0px 2px;
+	transform: rotate(10deg);
+	box-shadow: inset 0px 0px 4px -2px #ad862e;
+	animation: wing-1-in 2s 5.5s ease forwards;
+}
+.iron-brief .wing:nth-child(2) .wing-in{
+	width: 0px;
+	height: 6px;
+	background-color: #eec569;
+	bottom: 5px;
+	right: -1px;
+	border-radius: 0px 5px 2px 2px;
+	transform: rotate(-10deg);
+	border-top: 0px solid #ad862e;
+	border-right: 0px solid #ad862e;
+	box-shadow: inset 0px 0px 4px -2px #ad862e;
+	animation: wing-2-in 2s 5.8s ease forwards;
+}
+.iron-harm-left{
+	width: 32px;
+	height: 13px;
+	top: 193px;
+	left: 5px;
+	background-color: #eec569;
+	z-index: 1;
+	border-radius: 15px 0px 3px 10px;
+	box-shadow: inset 0px -5px 4px -2px #ad862e;
+	animation: iron-harm-left .5s 5s ease forwards;
+	transform: rotate(0deg);
+}
+.iron-harm-left .cap{
+	width: 15px;
+	height: 15px;
+	left: -3px;
+	background-color: #741107;
+	border-radius: 10px 5px 5px 3px;
+	border-bottom: 2px solid #5a5a5a;
+	border-right: 2px solid #5d0c04;
+	z-index: 3;
+	animation: iron-harm-left-cap 1s 5.5s ease forwards;
+}
+.iron-harm-left .harm{
+	width: 0px;
+	height: 6px;
+	bottom: 0px;
+	left: 0px;
+	background-color: #741107;
+	z-index: 2;
+	border-bottom: 2px solid #5d0c04;
+	border-radius: 0px 3px;
+	animation: iron-harm-left-harm 1.3s 6s ease forwards;
+}
+.iron-harm-right{
+	width: 32px;
+	height: 13px;
+	top: 163px;
+	right: -35px;
+	transform: rotate(0deg);
+	background-color: #eec569;
+	z-index: 1;
+	border-radius: 0px 15px 10px 3px;
+	box-shadow: inset 0px -5px 4px -2px #ad862e;
+	animation: iron-harm-right .5s 5.3s ease forwards;
+}
+.iron-harm-right .cap{
+	width: 15px;
+	height: 15px;
+	right: -3px;
+	background-color: #741107;
+	border-radius: 5px 10px 3px 5px;
+	border-bottom: 2px solid #5a5a5a;
+	border-left: 2px solid #5d0c04;
+	z-index: 3;
+	animation: iron-harm-right-cap 1s 5.5s ease forwards;
+}
+.iron-harm-right .harm{
+	width: 0px;
+	height: 6px;
+	bottom: 0px;
+	right: 0px;
+	background-color: #741107;
+	z-index: 2;
+	border-bottom: 2px solid #5d0c04;
+	border-radius: 3px 0px;
+	animation: iron-harm-right-harm 1.3s 6.3s ease forwards;
+}
+.iron-leg-left .hamstring{
+	width: 0px;
+	height: 22px;
+	background-color: #741107;
+	border-radius: 100% 100% 9px 100%;
+	right: -3px;
+	top: 2px;
+	box-shadow: inset 0px 0px 3px 2px #5d0c04;
+	animation: iron-leg-left-hamstring 1s 4.5s ease forwards;
+}
+.iron-leg-right .hamstring{
+	width: 0px;
+	height: 22px;
+	background-color: #741107;
+	border-radius: 100% 100% 100% 9px;
+	left: 0px;
+	top: 2px;
+	box-shadow: inset 0px 0px 3px 2px #5d0c04;
+	animation: iron-leg-right-hamstring 1s 5s ease forwards;
+}
+.iron-body-back{
+	width: 0px;
+	height: 0px;
+	background-color: #741107;
+	left: -1px;
+	right: 0;
+	margin: 0 auto;
+	top: 55px;
+	border-radius: 25px 25px 0px 25px;
+	transform: rotate(45deg);
+	z-index: 1;
+	animation: iron-body-back 1s 4.5s ease forwards;
+}
+@keyframes iron-body-back{
+	0%{width: 0px;height: 0px;}
+	50%{width: 0px;height: 0px;top: 55px;}
+	70%{width: 35px;height: 35px;top: 60px;}
+	100%{width: 38px;height: 38px;top: 55px;}
+}
+@keyframes iron-leg-right-hamstring{
+	0%{width: 0px;left: 0px}
+	100%{width: 9px;left:-3px;}
+}
+@keyframes iron-leg-left-hamstring{
+	0%{width: 0px;right: 0px}
+	100%{width: 9px;right:-3px;}
+}
+@keyframes iron-harm-left{
+	0%{top: 193px;left: 5px;transform: rotate(0deg);}
+	20%{transform: rotate(-90deg);}
+	100%{top: 122px;left: 11px;transform: rotate(-65deg);}
+}
+@keyframes iron-harm-left-cap{
+	0%{transform: rotate(0deg);bottom: -2px;left:0px;}
+	100%{transform: rotate(47deg);bottom: 1px;left:-5px;}
+}
+@keyframes iron-harm-left-harm{
+	0%{width: 0px;}
+	100%{width: 20px;}
+}
+@keyframes iron-harm-right{
+	0%{top: 163px;right: -35px;transform: rotate(0deg);}
+	20%{transform: rotate(90deg);}
+	100%{top: 122px;right: 11px;transform: rotate(65deg);}
+}
+@keyframes iron-harm-right-cap{
+	0%{transform: rotate(0deg);bottom: -2px;right:0px;}
+	100%{transform: rotate(-47deg);bottom: 1px;right:-5px;}
+}
+@keyframes iron-harm-right-harm{
+	0%{width: 0px;}
+	100%{width: 20px;}
+}
+@keyframes iron-brief{
+	0%{top: 176px;left: -150px;transform: rotate(-30deg);}
+	20%{top: 150px;left: 0;transform: rotate(60deg);}
+	100%{top: 105px;left: 0;transform: rotate(0deg);}
+}
+@keyframes wing-1{
+	0%{width: 0px;left:0px;}
+	100%{width: 10px;left: -13px;}
+}
+@keyframes wing-1-in{
+	0%{width: 0px;left: 14px;}
+	50%{transform: rotate(10deg);}
+	60%{transform: rotate(30deg);}
+	80%{transform: rotate(20deg);}
+	90%{transform: rotate(30deg);}
+	100%{width: 14px;left: -1px;transform: rotate(10deg);}
+}
+@keyframes wing-2{
+	0%{width: 0px;right:0px;}
+	100%{width: 10px;right: -13px;}
+}
+@keyframes wing-2-in{
+	0%{width: 0px;right: 14px;}
+	50%{transform: rotate(-10deg);}
+	60%{transform: rotate(-30deg);}
+	80%{transform: rotate(-20deg);}
+	90%{transform: rotate(-30deg);}
+	100%{width: 14px;right: -1px;transform: rotate(-10deg);}
+}
+@keyframes iron-leg-right{
+	0%{transform: rotate(-93deg);top: 175px;right: -10px;}
+	100%{right: 16px;top: 141px;transform: rotate(3deg);}
+}
+@keyframes iron-leg-right-foot{
+	0%{bottom: 3px;width: 0px;right:7px;transform: rotate(60deg);}
+	100%{bottom: -3px;width: 22px;right:-11px;transform: rotate(10deg);}
+}
+@keyframes iron-leg-right-foot-after{
+	0%{height: 0px;bottom: 0px;}
+	100%{height: 3px;bottom: -5px;}
+}
+@keyframes iron-leg-left{
+	0%{transform: rotate(90deg);top: 150px;left: -80px;}
+	100%{left: 12px;top: 141px;transform: rotate(6deg);}
+}
+@keyframes iron-leg-left-foot{
+	0%{bottom: 3px;width: 0px;left:7px;transform: rotate(-60deg);}
+	100%{bottom: -6px;width: 22px;left:-11px;transform: rotate(-30deg);}
+}
+@keyframes iron-leg-left-foot-after{
+	0%{height: 0px;bottom: 0px;}
+	100%{height: 3px;bottom: -5px;}
+}
+@keyframes iron-shoulders-right{
+	0%{left: -20px;top: 180px;}
+	100%{left: 15px;top: 55px;}
+}
+@keyframes iron-shoulders-right-before{
+	0%{width: 15px;height: 13px;top: 0px;left: 0px;transform: rotate(10deg);border: 1px solid transparent;}
+	25%{transform: rotate(20deg);}
+	50%{transform: rotate(5deg);}
+	75%{transform: rotate(25deg);}
+	90%{transform: rotate(30deg);}
+	100%{width: 20px;height: 8px;top: -3px;left: -4px;transform: rotate(5deg);border: 2px solid #5d0c04;}
+}
+@keyframes iron-shoulders-left{
+	0%{right: -50px;top: 180px;}
+	100%{right: 15px;top: 55px;}
+}
+@keyframes iron-shoulders-left-before{
+	0%{width: 15px;height: 13px;top: 0px;right: 0px;transform: rotate(-10deg);border: 1px solid transparent;}
+	25%{transform: rotate(-20deg);}
+	50%{transform: rotate(-5deg);}
+	75%{transform: rotate(-25deg);}
+	90%{transform: rotate(-30deg);}
+	100%{width: 20px;height: 8px;top: -3px;right: -4px;transform: rotate(-5deg);border: 2px solid #5d0c04;}
+}
+@keyframes stark-arm-right{
+	0%{transform:rotate(-20deg);}
+	100%{transform:rotate(-60deg);left: 22px;top: -6px;}
+}
+@keyframes stark-arm-left{
+	0%{transform:rotate(20deg);}
+	100%{transform:rotate(60deg);right: 22px;top: -6px;}
+}
+@keyframes stark-hand{
+	0%{border-radius: 50% 5px 5px 5px;}
+	100%{border-radius: 100%; width: 25px;height: 15px;right: -10px;bottom: -10px;}
+}
+@keyframes stark-head{
+	0%{top: 0px;}
+	100%{top: 6px;}
+}
+@keyframes stark-body{
+	0%{top: 50px;}
+	100%{top: 55px;}
+}
+@keyframes shadow{
+	0%{width: 110px;}
+	100%{width: 120px;}
+}
+@keyframes stark-leg-left{
+	0%{left: 4px;transform: rotate(-10deg);}
+	100%{left: 10px;transform: rotate(-25deg);}
+}
+@keyframes stark-leg-left-foot{
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(30deg);}
+}
+@keyframes stark-leg-right{
+	0%{right: 4px;transform: rotate(10deg);}
+	100%{right: 10px;transform: rotate(25deg);}
+}
+@keyframes stark-leg-right-foot{
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(-20deg);}
+}
+@keyframes stark-mask-rect-eyes{
+	0%{border-color:#eaeaea;box-shadow: 0px -2px 0px 0px transparent,inset 0px 0px 1px 3px transparent;}
+	100%{border-color:#fff;box-shadow: 0px -2px 10px 3px #56feff, inset 0px 0px 1px 3px #56feff;}
+}
+@keyframes stark-mask-rect-3{
+	0%{top: -13px;}
+	100%{top: 13px;}
+}
+@keyframes stark-mask-rect-12{
+	0%{top: -19px;}
+	100%{top: 9px;}
+}
+@keyframes stark-mask{
+	0%{left: -350px;top: 190px;right: 0;transform: rotate(-30deg);margin: 0 auto;}
+	20%{transform: rotate(45deg);}
+	30%{left: 0px;top: -100px;right: 0;transform: rotate(0deg);margin: 0 auto;}
+	100%{left: 0;right: 0;top: 2px;margin: 0 auto;transform: rotate(0deg);}
+}
+@keyframes iron-body{
+	0%{left: 130px;right: 0;top: 210px;transform: rotate(54deg);}
+	60%{left: 150px;top: 100px;transform: rotate(-40deg);}
+	100%{left: 0px;right: 0;top: 55px;transform: rotate(0deg);}
+}
+@keyframes iron-body-ab{
+	0%{top:-5px;}
+	100%{top:1px;}
+}
+@keyframes iron-body-lower{
+	0%{width:10px;left:2.5px;}
+	100%{width:25px;left:0px;}
+}
+@keyframes arc-reactor{
+	0%{box-shadow: 0px 0px 0px 0px transparent; border-color: #c89f45;}
+	100%{box-shadow: 0px 0px 5px 3px #56feff,inset 0px 0px 3px 1px #56feff; border-color: #ffe3a6;}
+}
+@keyframes iron-hand-left{
+	0%{width: 0px;left: -60px;top: 187px;transform: rotate(80deg);}
+	10%{width: 0px;left: -20px;top: 130px;transform: rotate(-30deg);}
+	50%{width: 0px;left: 0px;top: 78px;}
+	100%{width: 37px;left: -3px;top: 67px;transform: rotate(-30deg);}
+}
+@keyframes iron-hand-arm{
+	0%{width: 0px;}
+	100%{width: 17px;}
+}
+@keyframes iron-hand-right{
+	0%{width: 0px;right: -85px;top: 180px;transform: rotate(80deg);}
+	10%{width: 0px;right: -20px;top: 120px;transform: rotate(30deg);}
+	50%{width: 0px;right: 0px;top: 78px;}
+	100%{width: 37px;right: -3px;top: 67px;transform: rotate(30deg);}
+}
+@keyframes newflame{
+	0%{width: 12px;transform: rotate(-90deg);box-shadow: -2px 0px 5px 3px #81bff3, inset 0px 0px 2px 1px #81bff3;}
+	100%{width: 0px;transform: rotate(-96deg);box-shadow: -2px 0px 0px 0px #81bff3, inset 0px 0px 2px 1px #81bff3;}
+}
+@keyframes wrapper{
+	0%{background-color: #fff;}
+	80%{background-color: #fff;}
+	100%{background-color: #333;}
+}
+@keyframes newflame-mask{
+	0%{width: 30px;transform: rotate(-90deg);box-shadow: -2px 0px 5px 3px #81bff3, inset 0px 0px 2px 1px #81bff3;}
+	100%{width: 0px;transform: rotate(-96deg);box-shadow: -2px 0px 0px 0px #81bff3, inset 0px 0px 2px 1px #81bff3;}
+}
+@keyframes newflame-body{
+	0%{width: 20px;transform: rotate(-90deg);box-shadow: -2px 0px 5px 3px #81bff3, inset 0px 0px 2px 1px #81bff3;}
+	100%{width: 0px;transform: rotate(-96deg);box-shadow: -2px 0px 0px 0px #81bff3, inset 0px 0px 2px 1px #81bff3;}
+}
+@keyframes newflame-small{
+	0%{width: 15px;transform: rotate(-90deg);box-shadow: -2px 0px 5px 3px #81bff3, inset 0px 0px 2px 1px #81bff3;}
+	80%{width: 15px;}
+	100%{width: 0px;transform: rotate(-96deg);box-shadow: -2px 0px 0px 0px #81bff3, inset 0px 0px 2px 1px #81bff3;}
+}
+@keyframes newflame-mid{
+	0%{width: 15px;transform: rotate(0deg);box-shadow: -2px 0px 5px 3px #81bff3, inset 0px 0px 2px 1px #81bff3;}
+	80%{width: 15px;}
+	100%{width: 0px;transform: rotate(6deg);box-shadow: -2px 0px 0px 0px #81bff3, inset 0px 0px 2px 1px #81bff3;}
+}
+@keyframes platform-arc{
+	0%{box-shadow: 0px 0px 10px 3px #52FEFE;}
+	100%{box-shadow: 0px 0px 0px 0px #52FEFE;}
+}
+@keyframes platform-arc-inset{
+	0%{box-shadow: inset 0px 0px 10px 0px #52FEFE;}
+	100%{box-shadow: inset 0px 0px 0px 0px #52FEFE;}
+}
